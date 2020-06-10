@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="fixed">
-        <Navigation />
+        <Navigation ancre="nav" />
       </div>
       <AnimationHome />
       <AboutMe ancre="about" />
