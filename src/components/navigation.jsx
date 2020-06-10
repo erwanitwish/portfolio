@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Navigation({ ancre }) {
   return (
-    <nav id={ancre} className="navigation">
-      <div>Erwan Quillec</div>
+    <nav className="navigation">
+      <div id={ancre}>Erwan Quillec</div>
       <ul>
         <li>
-          <a href="#nav">Works</a>
+          <a href="#top">Works</a>
         </li>
         <li>
           <a href="#about">About Me</a>
