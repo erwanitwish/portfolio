@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(120, 123, 196);
+  background-color: white;
 }
 
 a,
@@ -22,20 +22,12 @@ a:active {
   color: grey;
 } */
 
-a::before {
-  position: absolute;
-  content: attr(data-content);
-  color: #ffffff;
-  text-decoration: underline;
-}
-
 .navigation {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-
   right: 1.5vw;
   top: 4vh;
   z-index: 1000;
@@ -65,18 +57,12 @@ a::before {
 }
 
 .project-title h1 {
-  font-family: "Teko", sans-serif;
+  /* font-family: "Teko", sans-serif;
   font-weight: 300;
   margin: 10px;
   font-size: 100px;
   letter-spacing: -8px;
-  text-transform: uppercase;
-}
-
-.project-overview {
-  position: fixed;
-  right: 10vw;
-  top: 20vh;
+  text-transform: uppercase; */
 }
 
 .project-overview img {
@@ -98,6 +84,7 @@ a::before {
   margin-left: 15vw;
   padding-top: 16vh;
   border-bottom: 1px solid white;
+  font-size: 1.5rem;
 }
 
 .full-anim {
@@ -130,12 +117,12 @@ a::before {
   background: black;
   margin: 30px;
   will-change: transform;
-  -webkit-filter: grayscale(30%);
+  -webkit-filter: grayscale(80%);
   box-shadow: 2px 2px 30px 2px rgba(4, 52, 70, 0.5);
 }
 
 .script-bf-box:hover {
-  background: hotpink;
+  background: black;
   -webkit-filter: grayscale(0%);
 }
 
@@ -161,16 +148,17 @@ a::before {
 .about {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50vh;
+  padding-bottom: 20vh;
+  background-color: rgb(120, 123, 196);
+  box-shadow: inset -5px 165px 64px -154px rgba(13, 2, 27, 1);
 }
 
 .about-top {
   display: flex;
   padding-top: 20vh;
   padding-left: 25vw;
-  padding-bottom: 15vh;
+  padding-bottom: 12vh;
   color: rgb(13, 2, 27);
-  z-index: -10000;
   font-weight: 200;
 }
 
@@ -256,4 +244,74 @@ a::before {
 
 .job-about {
   font-size: 1rem;
+}
+
+.email {
+  position: fixed;
+  right: 3vw;
+  bottom: 4vh;
+  color: white;
+}
+
+.contact {
+  padding-left: 25vw;
+  padding-bottom: 40vh;
+  background-color: rgb(120, 123, 196);
+}
+
+.my-contact {
+  color: rgb(13, 2, 27);
+  margin-bottom: 4vh;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.contact-element {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+}
+
+.mail {
+  padding-top: 1vh;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+/* project page */
+
+.project-nav {
+  color: rgb(13, 2, 27);
+}
+
+#nav-item {
+  color: rgb(13, 2, 27);
+}
+
+.full-project {
+  background-color: rgb(254, 250, 248);
+}
+
+.project-top {
+  padding-top: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.project-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding-right: 5vw;
+}
+
+.project-over {
+  text-align: center;
+}
+
+.full-content {
+  background-color: white;
 }

@@ -5,17 +5,19 @@ import Navigation from "./navigation";
 import AnimationHome from "./animationHome.jsx";
 import AboutMe from "./aboutMe";
 import Contact from "./contact";
+import Email from "./email";
 
 export default function Home() {
   AOS.init();
   return (
     <>
       <div className="fixed">
-        <Navigation ancre="nav" />
+        <Navigation />
       </div>
       <AnimationHome />
       <AboutMe ancre="about" />
       <Contact ancre="contact" />
+      <Email />
     </>
   );
 }

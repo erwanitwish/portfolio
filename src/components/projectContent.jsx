@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ProjectContent({ content }) {
+export default function ProjectContent({ content1 }) {
   return (
     <div className="full-content">
-      <p>{content}</p>
+      <p>{content1}</p>
     </div>
   );
 }
