@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: rgb(120, 123, 196);
 }
 
 a,
@@ -87,6 +88,9 @@ a::before {
   color: white;
   background-image: url(./visuels/blue-background.jpg);
   background-size: cover;
+  -webkit-box-shadow: -1px 7px 51px 1px rgba(13, 2, 27, 1);
+  -moz-box-shadow: -1px 7px 51px 1px rgba(13, 2, 27, 1);
+  box-shadow: -1px 7px 51px 1px rgba(13, 2, 27, 1);
 }
 
 .underline {
@@ -156,18 +160,25 @@ a::before {
 
 .about {
   display: flex;
-  padding-top: 30vh;
+  flex-direction: column;
+  padding-bottom: 50vh;
+}
+
+.about-top {
+  display: flex;
+  padding-top: 20vh;
   padding-left: 25vw;
   padding-bottom: 15vh;
-  background-color: rgb(120, 123, 196);
   color: rgb(13, 2, 27);
+  z-index: -10000;
+  font-weight: 200;
 }
 
 .skills,
 .softwares {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 25vw;
 }
 
@@ -175,14 +186,13 @@ a::before {
   margin-right: 9vw;
 }
 .skills-title {
-  display: inline-inline-block;
-  border-bottom: 2px solid rgb(13, 2, 27);
-  margin-bottom: 4vh;
-  font-weight: 200;
+  display: inline-block;
+  margin-bottom: 7vh;
+  font-weight: 300;
 }
 
 .items {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -191,21 +201,59 @@ a::before {
 }
 
 .softwares-title {
-  display: inline-inline-block;
-  border-bottom: 2px solid rgb(13, 2, 27);
+  display: inline-block;
   margin-bottom: 4vh;
-  font-size: 3rem;
-  font-weight: 200;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .logos {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .softwares img {
-  width: 5vw;
+  width: 4vw;
   margin-right: 1vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
+}
+
+.pro-xp {
+  padding-left: 25vw;
+}
+
+.xp-title {
+  display: inline-block;
+  margin-bottom: 4vh;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.xp {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 21vw;
+}
+
+.xp-detail {
+  width: 20vw;
+}
+
+.company {
+  display: inline-block;
+  border-bottom: 1px solid white;
+  margin-bottom: 1vh;
+}
+
+.job {
+  margin-bottom: 1vh;
+}
+
+.job-about {
+  font-size: 1rem;
 }

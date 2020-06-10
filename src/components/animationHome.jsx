@@ -19,26 +19,28 @@ export default function AnimationHome() {
   });
 
   return (
-    <div className="top-home">
-      <div className="underline">Latest Works </div>
-      <div className="full-anim">
-        {datasTest.map((i) => (
-          <div className="content-move">
-            <Link to={i.link}>
-              <animated.div
-                key={i.id}
-                className="script-bf-box"
-                style={{ transform: radians.interpolate(interp(i.id)) }}
-              >
-                <div className="test-image">
-                  <img src={require(`../visuels/${i.overviewLink}`)} />
-                </div>
-              </animated.div>
-            </Link>
-          </div>
-        ))}
+    <div className="wrapper">
+      <div className="top-home">
+        <div className="underline">Latest Works </div>
+        <div className="full-anim">
+          {datasTest.map((i) => (
+            <div className="content-move">
+              <Link to={i.link}>
+                <animated.div
+                  key={i.id}
+                  className="script-bf-box"
+                  style={{ transform: radians.interpolate(interp(i.id)) }}
+                >
+                  <div className="test-image">
+                    <img src={require(`../visuels/${i.overviewLink}`)} />
+                  </div>
+                </animated.div>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="arrow">Scroll</div>
       </div>
-      <div className="arrow">Scroll</div>
     </div>
   );
 }
