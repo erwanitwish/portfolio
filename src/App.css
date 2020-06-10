@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* a:hover,
+a:focus,
+a:active {
+  color: grey;
+} */
+
+a::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #ffffff;
+  text-decoration: underline;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+
+.navigation {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  position: fixed;
+
+  right: 1.5vw;
+  top: 4vh;
+  z-index: 1000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation div {
+  padding-left: 4vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .navigation div {
+  align-self: flex-start;
+} */
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation li {
+  list-style: none;
+  margin-right: 2vw;
+}
+
+.titles {
+  padding-top: 6vh;
+  padding-bottom: 70vh;
+}
+
+.project-title h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  margin: 10px;
+  font-size: 100px;
+  letter-spacing: -8px;
+  text-transform: uppercase;
+}
+
+.project-overview {
+  position: fixed;
+  right: 10vw;
+  top: 20vh;
+}
+
+.project-overview img {
+  width: 50vw;
+}
+
+.top-home {
+  background-color: rgba(13, 2, 27, 1);
+  color: white;
+  background-image: url(./visuels/blue-background.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+}
+
+.underline {
+  display: inline-block;
+  margin-left: 15vw;
+  padding-top: 16vh;
+  border-bottom: 1px solid white;
+}
+
+.full-anim {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: black;
+  padding-top: 8vh;
+  padding-bottom: 3vh;
+  /* background-color: rgba(13, 2, 27, 1); */
+}
+
+.script-bf-box {
+  width: 15vw;
+  height: 50vh;
+  background: black;
+  margin: 30px;
+  will-change: transform;
+  -webkit-filter: grayscale(30%);
+  box-shadow: 2px 2px 30px 2px rgba(4, 52, 70, 0.5);
+}
+
+.script-bf-box:hover {
+  background: hotpink;
+  -webkit-filter: grayscale(0%);
+}
+
+.test-image {
+  width: 15vw;
+  height: 50vh;
+}
+
+.test-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  writing-mode: vertical-rl;
+  display: inline-block;
+  margin-left: 20vw;
+  padding-bottom: 50vh;
+  border-left: 1px solid white;
+}
+
+.about {
+  display: flex;
+  margin-left: 30vw;
+  padding-bottom: 15vh;
+  color: rgb(13, 2, 27);
+}
+
+.skills,
+.softwares {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  width: 25vw;
+}
+
+.skills {
+  margin-right: 3vw;
+}
+.skills-title {
+  display: inline-inline-block;
+  border-bottom: 4px solid rgb(13, 2, 27);
+  margin-bottom: 1vh;
+}
+
+.items {
+  font-size: 2.5rem;
+}
+
+.softwares {
+  width: 30vw;
+}
+
+.softwares-title {
+  display: inline-inline-block;
+  border-bottom: 4px solid rgb(13, 2, 27);
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.softwares img {
+  width: 5vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
 }

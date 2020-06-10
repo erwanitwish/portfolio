@@ -1,0 +1,47 @@
+{
+  "Manny": {
+    "name": "Immeuble Manny",
+    "overviewLink": "overview_manny.png",
+    "resume": "HTML5 - CSS3",
+    "content1": "Projet réalisé exclusivement en HTML5 et CSS3 afin de présenter les spécificités de l'immeuble Manny présent sur l'ile de Nantes.",
+    "content2": "",
+    "visual1": "",
+    "alt1": "",
+    "visual2": "",
+    "alt2": "",
+    "visual3": "",
+    "alt3": "",
+    "visual4": "",
+    "alt4": ""
+  },
+  "TeleportMe": {
+    "name": "Teleport-Me",
+    "overviewLink": "overview_teleport.png",
+    "resume": "React.js - Axios - CSS",
+    "content1": "Création réalisé lors d'un hackathon de 24h, le sujet 'Voyage depuis ton canapé', réalisé en React + utilisation d'API.",
+    "content2": "",
+    "visual1": "",
+    "alt1": "",
+    "visual2": "",
+    "alt2": "",
+    "visual3": "",
+    "alt3": "",
+    "visual4": "",
+    "alt4": ""
+  },
+  "ArsenicCocktail": {
+    "name": "Arsenic Cocktail",
+    "overviewLink": "overview_arsenic.png",
+    "resume": "React.js - Axios - CSS - Animation",
+    "content1": "Site Utilisant une API d'ingrédients afin de créer des cocktails aléatoires. Réalisé en React.",
+    "content2": "",
+    "visual1": "",
+    "alt1": "",
+    "visual2": "",
+    "alt2": "",
+    "visual3": "",
+    "alt3": "",
+    "visual4": "",
+    "alt4": ""
+  }
+}
