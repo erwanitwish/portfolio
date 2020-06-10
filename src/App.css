@@ -26,8 +26,6 @@ a::before {
   content: attr(data-content);
   color: #ffffff;
   text-decoration: underline;
-  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-  transition: clip-path 275ms ease;
 }
 
 .navigation {
@@ -89,7 +87,6 @@ a::before {
   color: white;
   background-image: url(./visuels/blue-background.jpg);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
 }
 
 .underline {
@@ -153,14 +150,16 @@ a::before {
   writing-mode: vertical-rl;
   display: inline-block;
   margin-left: 20vw;
-  padding-bottom: 50vh;
+  padding-bottom: 30vh;
   border-left: 1px solid white;
 }
 
 .about {
   display: flex;
-  margin-left: 30vw;
+  padding-top: 30vh;
+  padding-left: 25vw;
   padding-bottom: 15vh;
+  background-color: rgb(120, 123, 196);
   color: rgb(13, 2, 27);
 }
 
@@ -173,16 +172,18 @@ a::before {
 }
 
 .skills {
-  margin-right: 3vw;
+  margin-right: 9vw;
 }
 .skills-title {
   display: inline-inline-block;
-  border-bottom: 4px solid rgb(13, 2, 27);
-  margin-bottom: 1vh;
+  border-bottom: 2px solid rgb(13, 2, 27);
+  margin-bottom: 4vh;
+  font-weight: 200;
 }
 
 .items {
   font-size: 2.5rem;
+  color: white;
 }
 
 .softwares {
@@ -191,7 +192,10 @@ a::before {
 
 .softwares-title {
   display: inline-inline-block;
-  border-bottom: 4px solid rgb(13, 2, 27);
+  border-bottom: 2px solid rgb(13, 2, 27);
+  margin-bottom: 4vh;
+  font-size: 3rem;
+  font-weight: 200;
 }
 
 .logos {

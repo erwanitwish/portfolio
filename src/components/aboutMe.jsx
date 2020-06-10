@@ -12,12 +12,7 @@ import jira from "../visuels/logos/jira.png";
 
 export default function AboutMe({ ancre }) {
   return (
-    <div
-      className="about"
-      data-aos="fade-right"
-      data-aos-duration="1000"
-      id={ancre}
-    >
+    <div className="about" id={ancre}>
       <div className="skills">
         <div className="skills-title">Skills</div>
         <div className="items">
@@ -29,7 +24,7 @@ export default function AboutMe({ ancre }) {
         </div>
       </div>
       <div className="softwares">
-        <div className="softwares-title">Softwares</div>
+        <div className="softwares-title">Languages</div>
         <div className="logos">
           <img src={html} alt="" />
           <img src={css} alt="" />
