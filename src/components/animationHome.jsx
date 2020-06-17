@@ -6,7 +6,7 @@ import datasTest from "./../Datas/datas-test.json";
 
 const items = range(5);
 const interp = (i) => (r) =>
-  `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
+  `translate3d(0, ${5 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 
 export default function AnimationHome() {
   const { radians } = useSpring({
@@ -19,19 +19,19 @@ export default function AnimationHome() {
   });
 
   return (
-    <div className="wrapper">
-      <div className="top-home">
-        <div className="underline">Latest Works </div>
-        <div className="full-anim">
+    <div className='wrapper'>
+      <div className='top-home'>
+        <div className='underline'>Latest Works </div>
+        <div className='full-anim'>
           {datasTest.map((i) => (
-            <div className="content-move">
+            <div className='content-move'>
               <Link to={i.link}>
                 <animated.div
                   key={i.id}
-                  className="script-bf-box"
+                  className='script-bf-box'
                   style={{ transform: radians.interpolate(interp(i.id)) }}
                 >
-                  <div className="test-image">
+                  <div className='test-image'>
                     <img src={require(`../visuels/${i.overviewLink}`)} />
                   </div>
                 </animated.div>
@@ -39,7 +39,7 @@ export default function AnimationHome() {
             </div>
           ))}
         </div>
-        <div className="arrow">Scroll</div>
+        <div className='arrow'>Scroll</div>
       </div>
     </div>
   );

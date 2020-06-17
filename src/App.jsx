@@ -8,10 +8,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path='/'>
           <Home />
         </Route>
-        <Route path="/project/:project_name">
+        <Route path='/project/:project_name'>
           <Project />
         </Route>
       </Switch>

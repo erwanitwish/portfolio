@@ -293,14 +293,16 @@ a:active {
 }
 
 .project-top {
-  padding-top: 10vw;
+  padding-top: 20vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 10vw;
 }
 
 .project-intro {
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 
 .project-title {
@@ -309,9 +311,28 @@ a:active {
 }
 
 .project-over {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, -12vh);
 }
 
 .full-content {
+  text-align: center;
   background-color: white;
+  height: 300vh;
+  width: 60%;
+}
+
+.full-content img {
+  width: 100%;
+}
+
+.project_part2 {
+  display: flex;
+  align-items: center;
+}
+
+.project_part2 img {
+  width: 50%;
 }

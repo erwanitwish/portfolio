@@ -19,29 +19,29 @@ export default function Project() {
   const contentChoice = () => {
     if (project_name === "manny") {
       return (
-        <div className="full-project">
+        <div className='full-project'>
           <ProjectNavigation />
-          <div className="project-top">
-            <div className="project-intro">
-              <div className="project-title">
+          <div className='project-top'>
+            <div className='project-intro'>
+              <div className='project-title'>
                 <ProjectTitle Title={datas.Manny.name} />
               </div>
-              <div className="project-technos">
+              <div className='project-technos'>
                 <ProjectSummary text={datas.Manny.resume} />
               </div>
             </div>
-            <div className="project-cover">
-              <ProjectOverview link={datas.Manny.overviewLink} />
-            </div>
           </div>
-          <div className="project-over">
-            <ProjectContent content1={datas.Manny.content1} />
+          <div className='project-over'>
+            <ProjectContent
+              visuel1={datas.Manny.overviewLink}
+              content1={datas.Manny.content1}
+            />
           </div>
         </div>
       );
     } else if (project_name === "teleport-me") {
       return (
-        <div className="full-project">
+        <div className='full-project'>
           <ProjectNavigation />
           <ProjectTitle Title={datas.TeleportMe.name} />
           <ProjectOverview link={datas.TeleportMe.overviewLink} />
@@ -51,7 +51,7 @@ export default function Project() {
       );
     } else if (project_name === "arsenic-cocktail") {
       return (
-        <div className="full-project">
+        <div className='full-project'>
           <ProjectNavigation />
           <ProjectTitle Title={datas.ArsenicCocktail.name} />
           <ProjectOverview link={datas.ArsenicCocktail.overviewLink} />
