@@ -2,7 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import range from "lodash/range";
 import { Link, useParams } from "react-router-dom";
-import datasTest from "./../Datas/datas-test.json";
+import datasTest from "./../Datas/datas-animation.json";
 
 const items = range(5);
 const interp = (i) => (r) =>
